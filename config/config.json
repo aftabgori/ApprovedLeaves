@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "leaves-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/leaves/LeavesWebPart.js",
+          "manifest": "./src/webparts/leaves/LeavesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LeavesWebPartStrings": "lib/webparts/leaves/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

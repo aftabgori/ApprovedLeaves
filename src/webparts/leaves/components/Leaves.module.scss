@@ -1,0 +1,145 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.leaves {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(
+      --link
+    ); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(
+        --linkHovered
+      ); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.boxShdow {
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%), 0 0 10px 0 rgb(0 0 0 / 10%);
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  border-radius: 6px;
+  width: 260px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+  .boxShdow {
+    width: 214px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.nameFontStyle {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.gap {
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.teamAvailablility {
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+  /* display: flex; */
+  gap: 22px;
+  padding: 15px;
+  color: #333333;
+  /* justify-content: center; */
+  /* text-align: center; */
+  width: fit-content;
+  border: 2px solid blue;
+  font-size: 19px;
+  font-weight: 700;
+  height: 13px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.LeaveType {
+  // background: red;
+  // color: #fff;
+  // border-radius: 5px;
+  // text-align: center;
+  // font-weight: 600;
+  // padding: 1px 5px 1px 5px;
+  font-weight: 400;
+}
+
+.userProfile {
+  display: flex;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.userProfile {
+  // width: 45px;
+  // height: 45px;
+  // border-radius: 50%;
+  // margin-right: 8px;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.mainContentDiv {
+  margin-left: 10px;
+}
+
+.leaveDateDiv {
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .leaveDateDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+.displayName {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.scrollableContainer {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.leaveTypeDiv .LeaveType1 {
+  display: grid;
+}
